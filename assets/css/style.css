@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+/* Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px dotted red;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ==============================
+            HEADER
+============================== */
+
+header {
+    background: url("../img/ilustracion_people.png"), url("../img/ilustracion1.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-left: 30px;
+}
+
+header>img {
+    width: 3vw;
+    margin: 30px 10px 0 0;
+}
+
+header div:nth-of-type(1) {
+    display: inline-block;
+}
+
+header div:nth-of-type(1) p:nth-of-type(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+header div:nth-of-type(2) {
+    margin-left: 80px;
+}
+
+header div:nth-of-type(2) h1 {
+    font-size: 6rem;
+}
+
+header div:nth-of-type(2) h1:nth-of-type(1) {
+    margin-top: 22vh;
+}
+
+header div:nth-of-type(2) h1:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+header div:nth-of-type(2) p:nth-of-type(1) {
+    font-size: 2rem;
+    width: 40vw;
+}
+
+header div:nth-of-type(2) p:nth-of-type(1) img {
+    width: 28px;
+}
+
+header div:nth-of-type(2) p:nth-of-type(2) {
+    margin-top: 20vh;
+    color: #ff3571;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* ==============================
+            MAIN
+============================== */
