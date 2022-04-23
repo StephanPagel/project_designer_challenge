@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* font-family: 'Roboto', sans-serif; */
 
@@ -8,7 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px dotted red;
+    /* border: 1px dotted red; */
 }
 
 html {
@@ -31,17 +31,35 @@ header {
     background: url("../img/ilustracion_people.png"), url("../img/ilustracion1.png");
     background-size: 50%;
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: 100% 0%, 100% 0%;
     margin-left: 30px;
+    animation: move 3s linear infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes move {
+    0% {
+        background-position: 100% 0%, 100% 0%;
+    }
+
+    50% {
+        background-position: 100% 200%, 100% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%, 100% 0%;
+    }
 }
 
 header>img {
     width: 3vw;
     margin: 30px 10px 0 0;
+    position: fixed;
 }
 
 header div:nth-of-type(1) {
     display: inline-block;
+    margin: 33px 0 0 55px;
 }
 
 header div:nth-of-type(1) p:nth-of-type(1) {
@@ -88,7 +106,7 @@ header div:nth-of-type(2) p:nth-of-type(2) {
 ============================== */
 
 main img:nth-of-type(1) {
-    width: 100vw;
+    width: 98vw;
 }
 
 /* ==============================
@@ -168,6 +186,97 @@ main section:nth-of-type(1)>h2:nth-of-type(2) {
 main section:nth-of-type(1)>p {
     font-size: 2rem;
     width: 50vw;
-    margin: auto;
+    margin: 0 auto 20vh auto;
     text-align: center;
+}
+
+/* ==============================
+            SECTION FIND
+============================== */
+
+section:nth-of-type(2) {
+    margin: 0 10vw;
+}
+
+section:nth-of-type(2) article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+}
+
+section:nth-of-type(2) article>img {
+    width: 47%;
+}
+
+section:nth-of-type(2) article div {
+    width: 47%;
+}
+
+section:nth-of-type(2) article div p:nth-of-type(1) {
+    font-size: 7rem;
+    font-weight: 900;
+    color: #dddddd;
+    margin-bottom: 50px;
+}
+
+section:nth-of-type(2) article div img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(2) article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(2) article p:nth-of-type(2) {
+    font-size: 1.5rem;
+}
+
+/* ==============================
+            FOOTER
+============================== */
+
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 5vh;
+}
+
+footer p:nth-of-type(1) {
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
+
+footer input {
+    display: block;
+    margin: 0 auto 7vh auto;
+    padding: 20px 14vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 5px #DADADA;
+    border: none;
+}
+
+footer button {
+    padding: 10px 50px;
+    background: #ff3571;
+    color: #fff;
+    margin-bottom: 15vh;
+    border: none;
+}
+
+footer button:hover {
+    background: linear-gradient(90deg, rgba(255, 53, 113, 1) 0%, rgba(60, 48, 255, 1) 100%);
+}
+
+footer p:nth-of-type(2) {
+    text-align: left;
+    margin-left: 10vw;
+    font-size: 1.5rem;
+}
+
+footer p:nth-of-type(2) img {
+    width: 25px;
 }
